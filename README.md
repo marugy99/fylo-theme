@@ -13,4 +13,4 @@ This is my submission for the Front-End Mentor [Fylo Landing Page challenge](htt
 - Flexbox
 - CSS Grid
 
-[Live Site URL](https://marugy99.github.io/testimonials-grid/).
+[Live Site URL](https://marugy99.github.io/fylo-theme/).
