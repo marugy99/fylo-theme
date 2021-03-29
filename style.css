@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+body {
+  background-color: hsl(217, 28%, 15%);
+  color: white;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 1rem auto auto auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  width: 90%;
+  font-weight: 400;
+  font-size: 0.625rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Raleway", sans-serif;
+  transition: all 400ms ease-in-out;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+footer a:hover {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 2.125rem;
+  margin-bottom: 1.5rem;
+  max-width: 20rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+button {
+  width: 13.875rem;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  background: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+  outline: none;
+  color: white;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+i {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0.875rem;
+  width: 0.875rem;
+  margin-right: 0.875rem;
+  transition: all 300ms ease-in-out;
+}
+
+i:hover {
+  color: hsl(176, 68%, 64%);
+  border: 1px solid hsl(176, 68%, 64%);
+  cursor: pointer;
+}
+
+.logo {
+  width: 72px;
+  height: 24px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 18rem;
+  height: auto;
+}
+
+.paragraph {
+  max-width: 18.75rem;
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+}
+
+.curvy {
+  background-image: url(images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.dark-background {
+  background-color: hsl(218, 28%, 13%);
+}
+
+#features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26%, 17rem));
+  grid-template-rows: auto auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 7.5rem;
+  row-gap: 5rem;
+  column-gap: 10rem;
+}
+
+#features-grid img {
+  height: 4.875rem;
+  width: auto;
+}
+
+.flex-container {
+  width: 92%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.productive-image {
+  width: 17rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.cta {
+  display: inline;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  color: hsl(176, 68%, 64%);
+}
+
+.cta img {
+  transform: translate(26%, 28%);
+}
+
+.cta:hover {
+  color: white;
+}
+
+.card {
+  background-color: hsl(219, 30%, 18%);
+  max-width: 18rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.card-data {
+  display: flex;
+  align-items: center;
+}
+
+.card-data img {
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+}
+
+.card-data p {
+  margin: 0;
+  font-size: 0.625rem;
+}
+
+.quotes {
+  align-self: flex-start;
+  margin-bottom: -0.5px;
+  width: 2.5rem;
+}
+
+#sign-in {
+  text-align: center;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-card {
+  background-color: hsl(219, 30%, 18%);
+  width: 70%;
+  padding: 2.5rem;
+  border-radius: 5px;
+  margin-bottom: -110px;
+}
+
+#email {
+  padding: 1rem;
+  border-radius: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  outline: none;
+}
+
+input[type="email"] {
+  width: 12.5rem;
+}
+
+form,
+form button {
+  margin-top: 1rem;
+}
+
+input::placeholder {
+  color: rgb(204, 204, 204);
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  min-height: 390px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  padding-top: 12rem;
+  justify-content: center;
+}
+
+.footer-col {
+  max-width: 80%;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.icon {
+  height: 1.25rem;
+  margin-top: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.fb {
+  padding-left: 1rem;
+}
+
+#footer ul {
+  padding-left: 0;
+  line-height: 1.8;
+  margin-right: 4rem;
+  font-size: 0.875rem;
+}
+
+/* Media queries: I used three breakpoints */
+
+@media (min-width: 43.75rem) {
+  /* 700 px */
+
+  h1 {
+    max-width: 30rem;
+  }
+
+  h2 {
+    max-width: 15.5rem;
+    font-size: 1.875rem;
+  }
+
+  #sign-in h2 {
+    max-width: initial;
+  }
+
+  .hero-image {
+    max-width: 20rem;
+  }
+
+  .paragraph {
+    max-width: 22rem;
+  }
+
+  .collaboration {
+    grid-row: 2 / 3;
+  }
+
+  .any-file {
+    grid-row: 2 / 3;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .productive-image {
+    width: 25rem;
+    height: 15rem;
+    margin-right: 5rem;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: initial;
+    margin-right: 22px;
+  }
+
+  .quotes {
+    margin-top: -1.7rem;
+    margin-right: -35px;
+  }
+
+  form button {
+    margin-left: 1rem;
+  }
+
+  input[type="email"] {
+    width: 40%;
+  }
+
+  .sign-card p {
+    max-width: 65%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #footer {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .footer-col {
+    max-width: 28%;
+  }
+
+  .footer-col:not(:last-child) {
+    padding-right: 2rem;
+  }
+
+  .column {
+    flex-direction: initial;
+  }
+}
+
+@media (min-width: 62rem) {
+  /* 992 px  */
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  nav {
+    font-size: 0.875rem;
+  }
+
+  #features-grid {
+    column-gap: 12.5rem;
+  }
+
+  #productivity.flex-container {
+    max-width: 66%;
+  }
+
+  .footer-col:not(:last-child) {
+    padding-right: 5rem;
+  }
+
+  .curvy {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 87rem) {
+  /* 1392 px */
+
+  .hero-image {
+    max-width: 30em;
+  }
+}
